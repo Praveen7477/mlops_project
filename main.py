@@ -5,7 +5,7 @@ import joblib
 import numpy as np
 
 app = FastAPI()
-model = joblib.load("diabetes_prediction.pkl")
+model = joblib.load("diabetes_model.pkl")
 
 class DiabetesInput(BaseModel):
     Pregnancies: int
